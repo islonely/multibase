@@ -1,4 +1,5 @@
 #!/bin/bash
-git clone https://github.com/islonely/base58 ~/.vmodules/base58
-git clone https://github.com/islonely/base36 ~/.vmodules/base36
-git clone https://github.com/islonely/base32 ~/.vmodules/base32
+git clone https://github.com/islonely/base58 ./modules
+git clone https://github.com/islonely/base36 ./modules
+git clone https://github.com/islonely/base32 ./modules
+git clone https://github.com/islonely/v-hex ./modules

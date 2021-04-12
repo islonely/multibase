@@ -2,6 +2,7 @@ module multibase
 
 import math
 
+// bin_encode encodes a string of ASCII characters into binary string
 pub fn bin_encode(input string) string {
 	mut ret := ''
 	for b in input {
@@ -10,6 +11,7 @@ pub fn bin_encode(input string) string {
 	return ret
 }
 
+// bin_encode_byte encodes a single byte into a binary string
 fn bin_encode_byte(b byte) string {
 	mut ret := ''
 	for i := 7; i >= 0; i-- {
@@ -19,6 +21,7 @@ fn bin_encode_byte(b byte) string {
 	return ret
 }
 
+// bin_decode decodes a binary string into ASCII string
 pub fn bin_decode(input string) string {
 	mut src := input
 	if input.len & 7 != 0 {
@@ -36,6 +39,7 @@ pub fn bin_decode(input string) string {
 	return dec.bytestr()
 }
 
+// bin_decode_byte decodes a binary integer into a single byte
 fn bin_decode_byte(n int) byte {
 	mut ascii_code := 0
 	mut x := n
