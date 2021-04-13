@@ -17,7 +17,7 @@ Manual install:
 $ git clone https://github.com/is-lonely/multibase ~/.vmodules/multibase
 ```
 ## Usage
-The `encode` and `decode` functions take an encoding type and an input string. They will return a string or error. See [documentation]() for more details.
+The `encode` and `decode` functions take an encoding type and an input string. They will return a string or error. See [documentation](https://islonely.github.io/multibase/multibase.html) for more details.
 ```v
 import base58
 
