@@ -12,7 +12,7 @@ pub fn bin_encode(input string) string {
 }
 
 // bin_encode_byte encodes a single byte into a binary string
-fn bin_encode_byte(b byte) string {
+pub fn bin_encode_byte(b byte) string {
 	mut ret := ''
 	for i := 7; i >= 0; i-- {
 		ret += if b & (1 << i) != 0 {'1'} else {'0'}
@@ -40,7 +40,7 @@ pub fn bin_decode(input string) string {
 }
 
 // bin_decode_byte decodes a binary integer into a single byte
-fn bin_decode_byte(n int) byte {
+pub fn bin_decode_byte(n int) byte {
 	mut ascii_code := 0
 	mut x := n
 	for i := 0; x != 0; i++ {
