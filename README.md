@@ -16,6 +16,16 @@ Manual install:
 ```bash
 $ git clone https://github.com/is-lonely/multibase ~/.vmodules/multibase
 ```
+Next you'll need to install dependencies. V doesn't currently have a way to automatically install them so go ahead and execute one of these commands.
+
+Linux:
+```bash
+$ ./install-vdepends.sh
+```
+Windows:
+```bash
+$ .\install-vdepends.bat
+```
 ## Usage
 The `encode` and `decode` functions take an encoding type and an input string. They will return a string or error. See [documentation](https://islonely.github.io/multibase/multibase.html) for more details.
 ```v
