@@ -4,5 +4,6 @@ Module {
 	version: '0.0.1'
 	license: 'MIT'
 	repo_url: 'https://github.com/islonely/multibase'
-	dependencies: ['base58', 'base36', base32', 'hex']
+	author: 'Adam Oates'
+	dependencies: ['base58', 'base36', 'base32', 'hex']
 }
